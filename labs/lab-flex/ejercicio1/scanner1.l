@@ -12,6 +12,14 @@
 [ \t\n]         { }
 
  /* ── TODO: completar las siguientes reglas ──────────── */
+[1-9][0-9]*        { printf("constante decimal: %s\n", yytext); }
+
+0[xX][0-9a-fA-F]+  { printf("constante hexadecimal: %s\n", yytext); }
+
+[A-Za-z_][A-Za-z0-9_]*  { printf("identificador: %s\n", yytext); }
+
+.                  { printf("caracter no reconocido: %s\n", yytext); }
+
 
  /* TODO 1 — Constante decimal (ej: 123, 456, 9)
    Pista: empieza con un dígito del 1-9, seguido de cero o más dígitos [0-9]
