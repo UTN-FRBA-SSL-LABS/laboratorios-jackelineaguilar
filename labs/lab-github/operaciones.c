@@ -15,11 +15,11 @@ int restar(int a, int b) {
 /* ── multiplicar — implementar en feature/mi-funcion ─────────────────────── */
 
 /* Multiplica dos enteros utilizando el operador aritmetico *. */
-/* multiplicar hace el producto de 2 numeros enteros.
-int multiplicar(int a, int b) {
+/* multiplicar hace el producto de 2 numeros enteros. */
+
+int multiplicar(const int a, const int b) {
     return a * b;
 }
-
 /* ── esPar ────────────────────────────────────────────────────────────────── */
 
 int esPar(int n) {
